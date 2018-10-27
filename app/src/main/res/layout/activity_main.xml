@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background= "#604CAA"
+
+    >
 
     <Button
         android:id="@+id/signupButton"
@@ -12,6 +15,8 @@
         android:layout_height="80dp"
         android:layout_marginTop="64dp"
         android:layout_marginBottom="32dp"
+        android:textColor="@drawable/common_google_signin_btn_text_dark"
+        android:backgroundTint="#606C8F"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +29,8 @@
         android:id="@+id/loginButton"
         android:layout_width="347dp"
         android:layout_height="80dp"
+        android:backgroundTint="#606C8F"
+        android:textColor="#0fff00"
         android:text="Login"
         app:layout_constraintBottom_toTopOf="@+id/signupButton"
         app:layout_constraintStart_toStartOf="@+id/signupButton"
@@ -35,6 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:text="Welcome to Party Finder!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="#f600ab"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
