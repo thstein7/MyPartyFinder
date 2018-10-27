@@ -7,7 +7,6 @@
         <menu>
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
                 android:title="Chat" />
         </menu>
     </item>
@@ -15,11 +14,12 @@
     <item android:title="Account">
         <menu>
             <item
+                android:id="@+id/login_form"
                 android:title="Change Account Settings"
                 />
             <item
+                android:id="@+id/signupButton"
                 android:title="Sign Out"
-                android:onClick="exitAction"
                 />
         </menu>
     </item>

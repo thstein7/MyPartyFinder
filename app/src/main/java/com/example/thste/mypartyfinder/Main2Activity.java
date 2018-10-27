@@ -83,6 +83,16 @@ public class Main2Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+       if (id == R.id.nav_send) {
+
+       } else if (id == R.id.login_form) {
+
+       } else if (id == R.id.signupButton) {
+           startActivity(new Intent(this, MainActivity.class));
+           // Add sign out code here
+           finish();
+       }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -93,9 +103,14 @@ public class Main2Activity extends AppCompatActivity
         finish();
     }
 
-    public void exitAction(View view) {
+    public void exitAction() {
         startActivity(new Intent(this, MainActivity.class));
-        // Add signout code here
+        // Add si
+        finish();
+    }
+
+    public void hostParty(View view) {
+        startActivity(new Intent(this, MakeAParty.class));
         finish();
     }
 }
